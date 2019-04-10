@@ -9,7 +9,7 @@ public class Strings {
         info += " ";
         info += "I'm developer";
         //Strings são imutáveis, n podem ser alteradas
-        //entã no code acima qnd alteramos a string, toda vez q uma é grudada na outra é criado uma nova a partir da outra
+        //então no code acima qnd alteramos a string, toda vez q uma é grudada na outra é criado uma nova a partir da outra
         //como é sempre gerada a partir de outra, num programa grande pode tornar ineficiente
         System.out.println(info);
         //quando usamos o StringBuilder n é criado uma nova String e sim modifica o conteúdo da existente
