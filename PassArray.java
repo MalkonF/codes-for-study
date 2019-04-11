@@ -2,7 +2,7 @@
 public class PassArray {
 
     public static void main(String[] args) {
-        
+
         int[] array = {1, 2, 3, 4, 5};
         /*int[] myArray;
 		myArray = new int[] {1, 2, 3, 4, 5, 6};*/
@@ -33,7 +33,7 @@ public class PassArray {
     }
 
     public static void modifyArray(int[] array2) {
-        
+
         for (int counter = 0; counter < array2.length; counter++) {
             array2[counter] *= 2;
         }
