@@ -15,7 +15,7 @@ public class Swing {
         label.setText("My label");
 
         window.add(label);
-        
+
     }
 
 }
