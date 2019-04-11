@@ -32,7 +32,7 @@ public class Person {
     }
 
     public void sayHelloTo(Person person) {//Objeto tipo Person como argumento
-    
+
         System.out.println(this.getName() + " said hello to " + person.getName());
         //this.getName() chama o método getName da instância atual
     }
