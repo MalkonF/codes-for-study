@@ -36,7 +36,7 @@ public class GradeBook {
 
         int lowGrade = grades[0][0];
 
-        for (int[] studentGrades : grades) {
+        for (int[] studentGrades : grades) {//percorrendo arrays multidimensionais com for aprimorado
             for (int grade : studentGrades) {
                 if (grade < lowGrade) {
                     lowGrade = grade;
