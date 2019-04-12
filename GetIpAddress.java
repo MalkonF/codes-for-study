@@ -3,7 +3,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class getIpAddress {
+public class GetIpAddress {
 
     public static void main(String[] args) throws UnknownHostException {
 
