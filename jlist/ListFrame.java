@@ -11,7 +11,7 @@ import javax.swing.ListSelectionModel;
 
 public class ListFrame extends JFrame {
 
-    private final JList<String> colorJList; 
+    private final JList<String> colorJList;
     private static final String[] colorNames = {"Black", "Blue", "Cyan",
         "Dark Gray", "Gray", "Green", "Light Gray", "Magenta",
         "Orange", "Pink", "Red", "White", "Yellow"};
@@ -24,7 +24,7 @@ public class ListFrame extends JFrame {
         super("List Test");
         setLayout(new FlowLayout());
 
-        colorJList = new JList<String>(colorNames); 
+        colorJList = new JList<String>(colorNames);
         colorJList.setVisibleRowCount(5);
 
         // n permite seleção múltipla
@@ -34,8 +34,7 @@ public class ListFrame extends JFrame {
         add(new JScrollPane(colorJList));
 
         colorJList.addListSelectionListener(
-                new ListSelectionListener() 
-        {
+                new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent event) {
                 getContentPane().setBackground(//getContentPane retorna um aref ao painel de conteudo do JFrame. Todo JFrame consistem em 3 camadas: o fundo, o painel de conteúdo(onde os componenetes GUI são exibidos. Ele oculta o fundo) e o painel transparente(p exibir dicas e outras coisas que tem que estar na frente dos componentes GUI).
@@ -44,4 +43,4 @@ public class ListFrame extends JFrame {
         }
         );
     }
-} 
+}
