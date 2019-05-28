@@ -33,16 +33,16 @@ class Card {
     public String toString() {
         return String.format("%s of %s", face, suit);
     }
-} 
+}
 
 public class DeckOfCards {
 
     private List<Card> list; //List q vai guardar Card
 
     public DeckOfCards() {
-        
+
         Card[] deck = new Card[52];
-        int count = 0; 
+        int count = 0;
 
         // preenche baralho com obj Card
         for (Card.Suit suit : Card.Suit.values()) {//values retorna um array que contém tds as constantes enum
@@ -53,11 +53,11 @@ public class DeckOfCards {
         }
 
         list = Arrays.asList(deck);
-        Collections.shuffle(list);  
-    } 
+        Collections.shuffle(list);
+    }
 
     public void printCards() {
-
+        // display 52 cards in two columns
         for (int i = 0; i < list.size(); i++) {
             System.out.printf("%-19s%s", list.get(i),
                     ((i + 1) % 4 == 0) ? "\n" : "");
@@ -65,8 +65,8 @@ public class DeckOfCards {
     }
 
     public static void main(String[] args) {
-        
+
         DeckOfCards cards = new DeckOfCards();
         cards.printCards();
     }
-} 
+}
