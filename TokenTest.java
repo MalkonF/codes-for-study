@@ -2,6 +2,7 @@
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+/*Código retirado do livro: Java - Como programar - Paul Deitel/ Harvey Deitel*/
 public class TokenTest {
 
     public static void main(String[] args) {
@@ -17,4 +18,4 @@ public class TokenTest {
             System.out.println(token);
         }
     }
-} 
+}
