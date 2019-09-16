@@ -19,7 +19,7 @@ public class CreateTextFile {
 
     public static void openFile() {
         try {
-            output = new Formatter("clients.txt");
+            output = new Formatter("/media/anonymous/46f8a10f-f298-4201-8ff1-296f11356171/backup/projetos/codes/java/codes-for-study/TextFileApps/clients.txt");
             /* se o arquivo n existir ele será criado.
             Se estiver aberto todo seu conteúdo será truncado*/
         } catch (SecurityException securityException) {
