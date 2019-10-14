@@ -22,6 +22,7 @@ public class ArrayListCollection {
 
         items.add("green");
         items.add("yellow");
+        items.set(0, "blue");
         display(items, "List with two new elements:");
 
         items.remove("yellow");
