@@ -12,7 +12,7 @@ public class Student {
         this.studentNumber = studentNumber;
     }
 
-    Student(Student student) {
+    Student(Student student) {//Atribuir valor padrão das variaveis studentName e studentNumber
         this.studentName = studentName;
         this.studentNumber = studentNumber;
     }

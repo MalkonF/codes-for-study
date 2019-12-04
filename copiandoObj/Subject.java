@@ -11,7 +11,7 @@ public class Subject {
         this.subjectName = subjectName;
     }
 
-    public Subject(Subject subject) {
+    public Subject(Subject subject) {//Atribui o valor do obj que foi passado no construtor
         this.subjectCode = subject.subjectCode;
         this.subjectName = subject.subjectName;
     }
