@@ -40,18 +40,9 @@ public class TextFieldFrame extends JFrame {
         passwordField.addActionListener(handler);
     }
 
-    /* classe aninhadas internas. Um obj da classe interna deve ser criado por um obj da classe q contém a classe
-    interna. Cada obj da classe interna tem implicitamente uma ref a um obj da classe d 1 nível. 
-    O obj da classe interna pode usar essa ref implícita p acessar diretamente tds as var e met da classe de 1 nível.
-    Uma classe aninhada q é static n exige um obj de sua classe de primeiro nivel e n tem implicitamente uma ref a um 
-    obj da classe de 1 nivel*/
- /*Cada evento é representado por uma classe e pode ser processado apenas pelo tipo de rotina d tratamento d 
-    evento apropriado. Qnd o enter é pressionado em um JTextField, ocorre um ActionEvent. Um evento assim é 
-    processado por um obj q implementa a interface ActionListener.O método actionPerformed especifica quais tarefas
-    fazer qnd ocorrer um ActionEvent*/
- /*P sabermos qual obj gerou o evento, o sistema cria um obj ActionEvent único q contém inf únicas sobre o evento 
-    q acabou de ocorrer, como a origem do evento e o txt no campo do obj. O sistema passa esse obj p o método 
-    actionPerformed. O método getSource retorna uma ref a fonte do evento*/
+    // classe aninhadas internas. Um obj da classe interna deve ser criado por um obj da classe q contém a classe interna. Cada obj da classe interna tem implicitamente uma ref a um obj da classe d 1 nível. O obj da classe interna pode usar essa ref implícita p acessar diretamente tds as var e met da classe de 1 nível. Uma classe aninhada q é static n exige um obj de sua classe de primeiro nivel e n tem implicitamente uma ref a um obj da classe de 1 nivel
+    //Cada evento é representado por uma classe e pode ser processado apenas pelo tipo de rotina d tratamento d evento apropriado. Qnd o enter é pressionado em um JTextField, ocorre um ActionEvent. Um evento assim é processado por um obj q implementa a interface ActionListener.O método actionPerformed especifica quais tarefas fazer qnd ocorrer um ActionEvent.
+    //P sabermos qual obj gerou o evento, o sistema cria um obj ActionEvent único q contém inf únicas sobre o evento q acabou de ocorrer, como a origem do evento e o txt no campo do obj. O sistema passa esse obj p o método actionPerformed. O método getSource retorna uma ref a fonte do evento
     private class TextFieldHandler implements ActionListener {
 
         @Override
@@ -76,9 +67,7 @@ public class TextFieldFrame extends JFrame {
     }
 }
 
-/*Rotina de tratamento de evento - cód q realiza uma tarefa em resposta a um evento. Crie uma classe q representa a 
-rotina d tratamento de evento e implementa uma interface apropriada
-Tratamento de evento - como vai responder ao evento. Indique q um obj da classe deve ser notificado qnd o evento 
-ocorre.
+/*Rotina de tratamento de evento - cód q realiza uma tarefa em resposta a um evento. Crie uma classe q representa a rotina d tratamento de evento e implementa uma interface apropriada
+Tratamento de evento - como vai responder ao evento. Indique q um obj da classe deve ser notificado qnd o evento ocorre.
 
  */

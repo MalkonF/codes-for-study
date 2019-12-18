@@ -2,7 +2,6 @@
 public class PackageDataTest {
 
     public static void main(String[] args) {
-
         PackageData packageData = new PackageData();
 
         System.out.printf("After instantiation:%n%s%n", packageData);
@@ -16,8 +15,7 @@ public class PackageDataTest {
 
 class PackageData {
 
-    int number;/*se n definir como private, os dados poderão ser acessados por outras classes que estão no 
-    mesmo pct, mesmo se deixar sem o public*/
+    int number;//se n definir como private, os dados poderão ser acessados por outras classes que estão no mesmo pct, mesmo se deixar sem o public
     String string;
 
     public PackageData() {

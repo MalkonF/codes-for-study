@@ -1,10 +1,8 @@
 
 class Thing {
 
-    public String name;/*variavel de instância, faz parte de cada objeto q é criado a partir da classe, pode 
-    ter vários valores*/
-    public static String description;/*faz parte da classe só pode ter um valor associado a classe. 
-    description será a mesma para todos objetos*/
+    public String name;//variavel de instância,faz parte de cada objeto q é criado a partir da classe, pode ter vários valores
+    public static String description;//faz parte da classe só pode ter um valor associado a classe. description será a mesma para todos objetos.
 
     public static int count = 0;
 
@@ -53,6 +51,5 @@ public class Static {
     }
 }
 //métodos static podem acessar var static, mas nao var de instância.
-/*Se o método for static e vc tentar por dentro dele ref a uma var instância, vai dar erro, pq n faz sentido
-pq var de instância n existe antes de criar objeto, e métodos static existe*/
+//Se o método for static e vc tentar por dentro dele ref a uma var instância, vai dar erro, pq n faz sentido pq var de instância n existe antes de criar objeto, e métodos static existe
 //Métodos de instância podem acessar tanto dados n static e dados static

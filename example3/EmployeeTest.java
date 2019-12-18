@@ -12,12 +12,9 @@ public class EmployeeTest {
         System.out.println(employee);
     }
 }
-/*Java permite que outros métodos da classe além dos seus contrutores tenham o mesmo nome da classe 
-e especifiquem tipos de retorno. Esses métodos n são construtores e n serão chamados qnd um objeto da
-classe for instanciado?????
+/*Java permite que outros métodos da classe além dos seus contrutores tenham o mesmo nome da classe e especifiquem tipos de retorno. Esses métodos n são construtores e n serão chamados qnd um objeto da classe for instanciado?????
 
- Classes nunca devem ter dados public n constantes, mas declarar dados public static final permite 
-disponibilizar as constantes p os clientes da sua classe 
+ Classes nunca devem ter dados public n constantes, mas declarar dados public static final permite disponibilizar as constantes p os clientes da sua classe 
 
 Métodos predicados -isEmpty - boolean
  */

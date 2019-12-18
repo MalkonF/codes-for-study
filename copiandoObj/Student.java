@@ -12,8 +12,7 @@ public class Student {
         this.studentNumber = studentNumber;
     }
 
-    Student(Student student) {/*Atribuir valor padrão das variaveis studentName e studentNumber e n o valor do 
-        obj que foi passado*/
+    Student(Student student) {//Atribuir valor padrão das variaveis studentName e studentNumber
         this.studentName = studentName;
         this.studentNumber = studentNumber;
     }

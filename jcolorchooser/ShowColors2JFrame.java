@@ -27,12 +27,11 @@ public class ShowColors2JFrame extends JFrame {
         changeColorJButton.addActionListener(
                 new ActionListener() // anonymous inner class
         {
-            /*método static. 3 arg: uma ref ao seu componente pai(janela no qual o componente é exibido, se
-            for null vai centralizar no centro da tela, se for uma ref ao pai vai centralizar no meio da janela),
-            uma string p barra título, e a cor inicial selecionado p diálogo*/
+            //método static. 3 arg: uma ref ao seu componente pai(janela no qual o componente é exibido, se for null vai centralizar no centro da tela, se for uma ref ao pai vai centralizar no meio da janela), uma string p barra título, e a cor inicial selecionado p diálogo
             @Override
             public void actionPerformed(ActionEvent event) {
-                color = JColorChooser.showDialog(ShowColors2JFrame.this, "Choose a color", color);
+                color = JColorChooser.showDialog(
+                        ShowColors2JFrame.this, "Choose a color", color);
 
                 if (color == null) {
                     color = Color.LIGHT_GRAY;

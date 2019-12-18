@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class CreateSequentialFile {
 
-    private static ObjectOutputStream output;
+    private static ObjectOutputStream output; 
 
     public static void main(String[] args) {
         openFile();
@@ -21,8 +21,7 @@ public class CreateSequentialFile {
         try {/*newOutputStream recebe um Path especificando o arquivo a abrir, se existir, retorna
           um OutputStream que pode ser usado p gravar no arquivo*/
             output = new ObjectOutputStream(
-                    Files.newOutputStream(Paths.get("/home/clients.ser")));/*/não ha nenhuma extensão padrão p
-            arquivos q armazenam obj serializados*/
+                    Files.newOutputStream(Paths.get("/home/clients.ser")));//não ha nenhuma extensão padrão p arquivos q armazenam obj serializados
         } catch (IOException ioException) {
             System.err.println("Error opening file. Terminating.");
             System.exit(1);
@@ -30,7 +29,6 @@ public class CreateSequentialFile {
     }
 
     public static void addRecords() {
-        
         Scanner input = new Scanner(System.in);
 
         System.out.printf("%s%n%s%n? ",

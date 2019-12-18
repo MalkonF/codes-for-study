@@ -5,7 +5,6 @@ import java.util.*;
 public class ListaAluno {
 
     public static void main(String[] args) {
-        
         Set<Aluno> conjunto = new HashSet<Aluno>();
 
         Aluno a = new Aluno("João da Silva", "Linux básico", 0);
