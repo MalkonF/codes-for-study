@@ -6,10 +6,18 @@ import java.util.Arrays;
 public class UsingToArray {
 
     public static void main(String[] args) {
-        String[] colors = {"black", "blue", "yellow"};
-        LinkedList<String> links = new LinkedList<>(Arrays.asList(colors));//constroi uma lista c os elementos do array colors. Permite q vc manipule um array como se fosse uma lista. Isso é útil p add elementos do array a coleção e classificar. Qlqr modificação feita por list altera o array, e tds as modificações feita no array alteram a visualização list. A unica operação permitida na visualização de list é set q altera o valor da visualização e o array. N pode add ou del elementos.
 
-        //As operações add aqui são permitidas pq operam diretamente na list e n na visualização retornada por asList
+        String[] colors = {"black", "blue", "yellow"};
+        LinkedList<String> links = new LinkedList<>(Arrays.asList(colors));
+        /*constroi uma lista c os elementos 
+        do array colors. Permite q vc manipule um array como se fosse uma lista. Isso é útil p add elementos 
+        do array a coleção e classificar. Qlqr modificação feita por list altera o array, e tds as 
+        modificações feita no array alteram a visualização list. A unica operação permitida na
+        visualização de list é set q altera o valor da visualização e o array. 
+        N pode add ou del elementos*/
+
+ /*As operações add aqui são permitidas pq operam diretamente na list e n na visualização retornada 
+        por asList*/
         links.addLast("red");
         links.add("pink"); // adiciona p o fim
         links.add(3, "green");
@@ -25,4 +33,7 @@ public class UsingToArray {
         }
     }
 }
-/*Passar um array q contém dados p toArray pode causar erros de lógica. Se o num de elementos no array for menor q o da lista, um novo array é alocado p armazenar os elementos d lista(sem preservar os elementos do array). Mas se o num de elementos no array for maior  q o d lista, os elemento do array serao sobrescrito pelo elementos d lista, os q n forem sobrescritos retem seus valores.*/
+/*Passar um array q contém dados p toArray pode causar erros de lógica. Se o num de elementos no array for
+menor q o da lista, um novo array é alocado p armazenar os elementos d lista(sem preservar os elementos do 
+array). Mas se o num de elementos no array for maior  q o d lista, os elemento do array serao sobrescrito 
+pelo elementos d lista, os q n forem sobrescritos retem seus valores.*/

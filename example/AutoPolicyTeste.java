@@ -11,7 +11,8 @@ public class AutoPolicyTeste {
         policyInNoFaultState(policy2);
     }
 
-    public static void policyInNoFaultState(AutoPolicy policy) {//Usa-se um método para receber objetos do tipo AutoPolicy para evitar repetição de cód. Ex: n precisa fazer policy1.get...policy2.get...
+    public static void policyInNoFaultState(AutoPolicy policy) {/*Usa-se um método para receber objetos do 
+        tipo AutoPolicy para evitar repetição de cód. Ex: n precisa fazer policy1.get...policy2.get...*/
 
         System.out.println("The auto policy:");
         System.out.printf(

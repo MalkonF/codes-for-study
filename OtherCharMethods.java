@@ -3,6 +3,7 @@
 public class OtherCharMethods {
 
     public static void main(String[] args) {
+        
         Character c1 = 'A';//aqui ocorre um autoboxing
         Character c2 = 'a';
 

@@ -76,31 +76,38 @@ public class PropertiesTest {
         Set<Object> keys = props.keySet(); // obtem set dos nomes da propriedade 
 
         for (Object key : keys) {
-            System.out.printf(
-                    "%s\t%s%n", key, props.getProperty((String) key));//obtem o valor da propriedade passando nome da chave
+            System.out.printf("%s\t%s%n", key, props.getProperty((String) key));/*obtem o valor da propriedade 
+            passando nome da chave*/
         }
 
         System.out.println();
     }
 }
 
-/*Properties é usada para armazenamento persistente de pares chave-valor
-Essa classe estende HashTable<Object, Object>*/
+/*Properties é usada para armazenamento persistente de pares chave-valor. Essa classe estende HashTable<Object, Object>*/
 
- /*Vector e HashTable são desincronizadas p padrão, mas o acesso concorrente a uma Collection por múltiplas threads pode provocar resultados indeterminados ou erros fatais. Por isso empacotadores de sincronização podem ser usados p coleções q podem ser acessadas por múltiplas threads
+ /*Vector e HashTable são desincronizadas p padrão, mas o acesso concorrente a uma Collection por múltiplas threads
+pode provocar resultados indeterminados ou erros fatais. Por isso empacotadores de sincronização podem ser usados
+p coleções q podem ser acessadas por múltiplas threads
 List<String> list1 = new ArrayList<>();
 List<String> list2 = Collections.synchronizedList(list1);*/
 
- /*Empacotadores n modificaveis lançam um UnsupportedOperationExceptions se forem feitas tentivas de modificar a coleção.Em uma coleção n modificavel as referencias armazenadas n são modificaveis, mas os obj q elas referenciam são modificaveis, a menos q pertençam a uma classe imutável String. 
+ /*Empacotadores n modificaveis lançam um UnsupportedOperationExceptions se forem feitas tentivas de modificar a 
+coleção.Em uma coleção n modificavel as referencias armazenadas n são modificaveis, mas os obj q elas referenciam 
+são modificaveis, a menos q pertençam a uma classe imutável String. 
 List<String> list1 = new ArrayList<>();
 List<String> list2 = Collections.unmodifiableList(list1);
 
-Vc pode utilizar um empacotador n modificável p criar uma coleção q oferece acesso de leitura as outras pessoas enqt permite o acesso de leitura e gravação a si mesmo. Isso é feito dando as outras pessoas uma ref ao empacotador n modificavel, ao mesmo tempo em q retem p vc uma ref a coleção original*/
+Vc pode utilizar um empacotador n modificável p criar uma coleção q oferece acesso de leitura as outras pessoas 
+enqt permite o acesso de leitura e gravação a si mesmo. Isso é feito dando as outras pessoas uma ref ao
+empacotador n modificavel, ao mesmo tempo em q retem p vc uma ref a coleção original*/
 
-/*A estrutura de coleções fornece várias implementações abstratas de interfaces Collection a partir das quais vc pode implementar rapidamente app personalizados.
+ /*A estrutura de coleções fornece várias implementações abstratas de interfaces Collection a partir das quais vc
+pode implementar rapidamente app personalizados.
 AbstractCollection - implementação magra de Colletion
 AbstractList - implementação de List q permite acesso do tipo de array
 AbstractMap
 .
 .
-P escrever uma implementação abstrata, estenda a implementação abstrata q melhor atender suas necessidades, implemente cd um dos métodos abstract da classe e sobrescreva os métodos concretos da classe conforme necessário.*/
+P escrever uma implementação abstrata, estenda a implementação abstrata q melhor atender suas necessidades,
+implemente cd um dos métodos abstract da classe e sobrescreva os métodos concretos da classe conforme necessário.*/

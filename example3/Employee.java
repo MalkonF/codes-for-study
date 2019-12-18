@@ -7,8 +7,7 @@ public class Employee {
     private Date birthDate;
     private Date hireDate;
 
-    public Employee(String firstName, String lastName, Date birthDate,
-            Date hireDate) {
+    public Employee(String firstName, String lastName, Date birthDate, Date hireDate) {
         
         this.firstName = firstName;
         this.lastName = lastName;
@@ -17,7 +16,6 @@ public class Employee {
     }
 
     public String toString() {
-        return String.format("%s , %s  Hired: %s  Birthday: %s",
-                lastName, firstName, hireDate, birthDate);
+        return String.format("%s , %s  Hired: %s  Birthday: %s", lastName, firstName, hireDate, birthDate);
     }
 }

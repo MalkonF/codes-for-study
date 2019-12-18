@@ -23,7 +23,7 @@ public class Subject {
     public void setSubjectName(String subjectName) {
         this.subjectName = subjectName;
     }
-
+   
     public boolean equals(Subject object) {
         return (this.subjectName.equals(object.subjectName)
                 && this.subjectCode.equals(object.subjectCode));

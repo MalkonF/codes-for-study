@@ -15,5 +15,5 @@ public class ToString {
         System.out.println(frog1);
     }
 }
-//se n tiver um @Override do toString, ao se referenciar o objeto frog1 vai mostrar o hashcode da classe e o endereço de memória(Frog@4aa298b7)
-
+/*se n tiver um @Override do toString, ao se referenciar o objeto frog1 vai mostrar o hashcode da classe e 
+o endereço de memória(Frog@4aa298b7)*/

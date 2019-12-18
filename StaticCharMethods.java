@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class StaticCharMethods {
 
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a character and press Enter");
         String input = scanner.next();

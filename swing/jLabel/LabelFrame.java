@@ -16,16 +16,19 @@ public class LabelFrame extends JFrame {//estender p herdar recursos da janela
     // LabelFrame constructor adds JLabels to JFrame
     public LabelFrame() {
         super("Testing JLabel");//passa o txt p o construtor de Jframe utilizar no título da janela
-        setLayout(new FlowLayout()); // set frame layout. São posicionados da esq p dir na ordem em q são add. setLayout é herdado de Container e serve p definir o layout.
+        setLayout(new FlowLayout());
+        /*set frame layout. São posicionados da esq p dir na ordem em q são add. 
+        setLayout é herdado de Container e serve p definir o layout*/
 
         label1 = new JLabel("Label with text");
         label1.setToolTipText("This is label1");
         add(label1); // add label1 to JFrame
 
-        // getClass recupera uma ref ao obj LabelFrame.class e getResource retorna a localização da img como uma url. Como a img está no mesmo diretório de LabelFrame o getClass retorna o endereço que a classe(e a img)e estão localizadas.
+        /*getClass recupera uma ref ao obj LabelFrame.class e getResource retorna a localização da img como uma url.
+        Como a img está no mesmo diretório de LabelFrame o getClass retorna o endereço que a classe(e a img)e estão
+                localizadas*/
         Icon bug = new ImageIcon(getClass().getResource("bug1.png"));
-        label2 = new JLabel("Label with text and icon", bug,
-                SwingConstants.LEFT);
+        label2 = new JLabel("Label with text and icon", bug, SwingConstants.LEFT);
         label2.setToolTipText("This is label2");
         add(label2); // add label2 to JFrame
 
@@ -38,4 +41,5 @@ public class LabelFrame extends JFrame {//estender p herdar recursos da janela
         add(label3);
     }
 }
-/*JFrame é uma subclasse indireta da classe Windows que fornece os atributos e comportamentos de uma janela(minimizar, fechar,miximizar)*/
+/*JFrame é uma subclasse indireta da classe Windows que fornece os atributos e comportamentos de uma
+janela(minimizar, fechar,miximizar)*/

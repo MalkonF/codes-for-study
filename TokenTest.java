@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 public class TokenTest {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a sentence and press Enter");
         String sentence = scanner.nextLine();

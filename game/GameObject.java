@@ -2,11 +2,14 @@ package game;
 
 public abstract class GameObject {
 
-    public abstract void draw();  //método abstrato só vai declarar mas n vai implementar. Vc implementa na classe que extender essa
+    public abstract void draw();
 
+    /*método abstrato só vai declarar mas n vai implementar. Vc implementa na
+classe que estender essa*/
     public static void main(String[] args) {
 
-        //GameObject s = new GameObject(); classes abastratam existem p serem estendidas e n p serem instanciadas. Vc tb pode colocar métodos e var q n são abstratas numa classe que é abastata
+        /*GameObject s = new GameObject(); classes abastratam existem p serem estendidas e n p serem instanciadas. 
+        Vc tb pode colocar métodos e var q n são abstratas numa classe que é abstrata*/
         Player player = new Player();
         player.someMethod();
         player.draw();
