@@ -1,5 +1,4 @@
 /*Código retirado do livro: Java - Como programar - Paul Deitel/ Harvey Deitel*/
-import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class IntStreamOperations {
@@ -28,6 +27,7 @@ public class IntStreamOperations {
         System.out.printf("Max: %d%n", IntStream.of(values).max().getAsInt());
         System.out.printf("Sum: %d%n", IntStream.of(values).sum());
         System.out.printf("Average: %.2f%n", IntStream.of(values).average().getAsDouble());
+        System.out.println(IntStream.of(values).summaryStatistics());
         //1 arg valor que acrescentará na soma. 2 arg um obj que implementa a interface funcional 
         //IntBinaryOperator
         System.out.printf("%nSum via reduce method: %d%n", IntStream.of(values).reduce(0, (x, y) -> x + y));
@@ -89,7 +89,7 @@ Já operações terminais inicia o processamento das operações intermediárias
 e produza um resultado. 
 
 Operracoes terminais gulosos  realizam a operação solicitada quando são chamados. 
-Essas operações são preguiçosas e podem melhorar o desempenho.
+as op preguiçosas podem melhorar o desempenho.
 
 As operações terminais elas só são invocadas após você ter uma operação intermediário, por exemplo,
 você vai ter uma operação terminal q é calcular média dos elementos no fluxo e após saber 
@@ -103,6 +103,7 @@ Formas sintaxe lambda:
 (x,y) -> {return x + y}; tipo de parametro omitido
 (x, y) -> x + y; return omitido
 value -> System.out.println("%d", value); contem 1 parametro e é omitido
+() -> System.out.println("Welcome");
 
 O compilador java pode inferir os tipos dos parametros de uma lambda e o tipo encontrado por uma 
 lambda a partir do contexto que ela é usada. Isso é determinado pelo tipo da interface funcional que
